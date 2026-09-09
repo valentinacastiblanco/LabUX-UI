@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #ffffff;
+}
 
 :root{
     --color-principal: rgb(2, 95, 201);
@@ -54,7 +57,10 @@ img{
 }
 
 #cabecera-principal{
-    background-color: hsl(29, 100%, 53%);
+    /* Imagen de fondo con capa oscura para legibilidad */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url("assets/otro fondo cali.webp") center/cover no-repeat;
+    
     padding: 50px;
     display: flex;
     flex-wrap: nowrap;
@@ -142,7 +148,12 @@ font-family: "Nunito Sans", sans-serif;
 }
 #area-experiencia{
     padding: 80px 0;
-    background: url("assets/fondo-cali.jpg") center center no-repeat black;
+    background: url("assets/otro\ fondo\ cali.webp") center center no-repeat black;
+    background-size: cover;
+}
+#area-experiencia{
+    padding: 80px 0;
+    background: url("assets/otro\ fondo\ cali.webp") center center no-repeat black;
     background-size: cover;
 }
 
@@ -150,4 +161,59 @@ font-family: "Nunito Sans", sans-serif;
     margin: 30px 5%;
 
 
+}
+.footer-brand img{
+    width: 150px;
+    height: auto;
+}
+.articulo-index{
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.articulo-index:hover{
+    transform: translateY(-6px);
+}
+
+.articulo-index img{
+    border-radius: 8px;
+}
+.articulo-destacado{
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.articulo-destacado:hover{
+    transform: translateY(-6px);
+}
+
+.articulo-destacado img{
+    border-radius: 8px;
+}
+#cabecera-principal a {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px 18px;
+    border-radius: 12px;
+    display: inline-block;
+}
+.boton-principal {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #161619; /* Texto oscuro para dar contraste con el fondo blanco */
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 18px;
+    transition: all linear 0.3s;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco visible */
+}
+
+.boton-principal:hover {
+    color: white;
+    background-color: var(--color-principal); /* Cambia a azul al pasar el cursor */
 }
