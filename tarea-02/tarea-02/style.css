@@ -1,0 +1,219 @@
+/* INDICE DE ESTILOS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+}
+
+:root{
+    --color-principal: rgb(2, 95, 201);
+    --color-acento: rgb(35, 235, 32);
+    --color-tercer: rgb(206, 10, 224);
+    --color-texto: rgb(22, 22, 25);
+}
+
+img{
+    width: 100%;
+}
+
+.elements-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo-principal{
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color-principal);
+  font-size: 28px;
+  text-align: center;
+}
+.titulo-principal{
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color-principal);
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.parrafo{
+      font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-texto);
+  font-size: 14px;
+}
+
+.texto-oculto{
+    display: none;
+}
+
+#cabecera-principal{
+    /* Imagen de fondo con capa oscura para legibilidad */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url("assets/otro fondo cali.webp") center/cover no-repeat;
+    
+    padding: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px){
+    #cabecera-principal{
+        flex-direction: column;
+    }
+
+    nav[role=navigation]{
+    width: 96%;
+    }
+
+    .boton-principal{
+        display: block;
+        width: 96%;
+        margin: 5px 2% 0 2%;
+        text-align: center;
+        border-bottom: 1px solid var(--color-principal);
+    }
+    .elements-row{
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+.boton-principal{
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+ color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 8px 15px 8px 15px;
+  transition: all linear 0.3s;
+  border-radius: 8px;
+}
+
+.boton-principal:hover{
+    color: rgb(137, 137, 253);
+    background-color: var(--color-principal);
+}
+
+#areas-destacadas{
+    padding: 100px 0;
+    
+}
+
+.articulo-index{
+    padding: 20px;
+    flex: 1;
+    max-width: 33%;
+}
+
+.img-destacado{
+    height: 250px;
+    object-fit: cover;
+}
+
+.articulo-index *{
+    margin: 0 0 10px 0;
+}
+
+.boton-ver-mas{
+font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--color-principal);
+  font-size: 20px;
+  text-decoration: none;
+  padding: 8px 15px 8px 15px;
+  transition: all linear 0.3s;
+  border-radius: 8px;
+}
+
+.boton-ver-mas:hover{
+    color: white;
+    background-color: var(--color-principal);
+    padding: 6px 15px 6px 15px;
+}
+#area-experiencia{
+    padding: 80px 0;
+    background: url("assets/otro\ fondo\ cali.webp") center center no-repeat black;
+    background-size: cover;
+}
+#area-experiencia{
+    padding: 80px 0;
+    background: url("assets/otro\ fondo\ cali.webp") center center no-repeat black;
+    background-size: cover;
+}
+
+#area-experiencia video{
+    margin: 30px 5%;
+
+
+}
+.footer-brand img{
+    width: 150px;
+    height: auto;
+}
+.articulo-index{
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.articulo-index:hover{
+    transform: translateY(-6px);
+}
+
+.articulo-index img{
+    border-radius: 8px;
+}
+.articulo-destacado{
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.articulo-destacado:hover{
+    transform: translateY(-6px);
+}
+
+.articulo-destacado img{
+    border-radius: 8px;
+}
+#cabecera-principal a {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px 18px;
+    border-radius: 12px;
+    display: inline-block;
+}
+.boton-principal {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #161619; /* Texto oscuro para dar contraste con el fondo blanco */
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 18px;
+    transition: all linear 0.3s;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco visible */
+}
+
+.boton-principal:hover {
+    color: white;
+    background-color: var(--color-principal); /* Cambia a azul al pasar el cursor */
+}
